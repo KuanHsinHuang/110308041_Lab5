@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Grades</h2>
+        <div class="input-container">
+            <input type="number" id="mathInput" placeholder="Math" required>
+            <input type="number" id="englishInput" placeholder="English" required>
+            <button id="submitButton">Submit</button>
+        </div>
+
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Math</th>
+                    <th>English</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>60</td>
+                    <td>70</td>
+                    <td>65.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>100</td>
+                    <td>80</td>
+                    <td>90.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>40</td>
+                    <td>70</td>
+                    <td>55.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Average</strong></td>
+                    <td id="mathAverage"><strong>66.67</strong></td>
+                    <td id="englishAverage"><strong>73.33</strong></td>
+                    <td id="overallAverage"><strong>70.00</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
